@@ -990,8 +990,20 @@
     }
   }
 
+  .bg-cover {
+    background-size: cover;
+  }
+
   .bg-clip-text {
     background-clip: text;
+  }
+
+  .bg-center {
+    background-position: center;
+  }
+
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
 
   .p-2 {
@@ -1168,6 +1180,10 @@
 
   .underline-offset-4 {
     text-underline-offset: 4px;
+  }
+
+  .opacity-20 {
+    opacity: .2;
   }
 
   .outline {
