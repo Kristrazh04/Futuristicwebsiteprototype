@@ -1,73 +1,155 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <title>NEO • interactive blog</title>
-    <meta name="viewport" content="width=1280, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechFuture — прототип</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="cursor-glow" aria-hidden="true"></div>
 
-    <header class="nav glass">
-        <div class="container nav__row">
-            <a class="logo" href="index.html">NEO</a>
-            <nav class="menu">
-                <a href="index.html" class="is-active">Home</a>
-                <a href="articles.html">Articles</a>
-                <a href="about.html">About</a>
+<body>
+
+    <!-- Topbar -->
+    <header class="topbar">
+        <div class="container nav">
+            <a class="brand" href="#">
+                <span class="logo">⚡</span>
+                <strong>TechFuture</strong>
+            </a>
+
+            <nav class="menu" id="menu">
+                <a class="active" href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
             </nav>
+
+            <button class="btn menu-toggle" id="menuToggle">Меню</button>
+            <a class="btn" href="#signup">Sign Up</a>
         </div>
     </header>
 
-    <section class="hero reveal">
-        <img class="hero__bg" src="img/hero.jpg" alt="" />
-        <div class="container hero__content glass">
-            <h1>Interactive blog about web & ideas</h1>
-            <p>Experiments with HTML/CSS/JS: effects, animation, and tiny notes.</p>
-            <div class="hero__cta">
-                <a class="btn" href="articles.html">Read articles</a>
-                <a class="btn btn--ghost" href="about.html">About the project</a>
+    <!-- Hero -->
+    <main id="home" class="container hero">
+        <div class="hero-grid">
+            <div>
+                <span class="chip">✨ The Future is Now</span>
+                <h1 class="h1">Build Something <span class="accent">Amazing</span> Today</h1>
+                <p class="lead">
+                    Experience the next generation of digital technology. Create, innovate
+                    and transform ideas into reality with our platform.
+                </p>
+                <div class="cta">
+                    <a class="btn" href="#get-started">Get Started →</a>
+                    <button class="btn ghost" disabled>Скетчи в работе…</button>
+                </div>
+
+                <div class="stats">
+                    <div class="stat"><b>1000+</b><small>Проектов</small></div>
+                    <div class="stat"><b>50K</b><small>Пользователей</small></div>
+                    <div class="stat"><b>24/7</b><small>Поддержка</small></div>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <main class="container">
-        <h2 class="section-title reveal">Featured notes</h2>
-
-        <div class="cards">
-            <a class="card glass tilt reveal" href="article.html?slug=glass">
-                <img src="img/thumb1.jpg" alt="" />
-                <div class="card__body">
-                    <h3>Glassmorphism without libraries</h3>
-                    <p>Blur, layers, accents, and readability.</p>
-                </div>
-            </a>
-
-            <a class="card glass tilt reveal" href="article.html?slug=scroll">
-                <img src="img/thumb1.jpg" alt="" />
-                <div class="card__body">
-                    <h3>Smooth reveal-on-scroll</h3>
-                    <p>IntersectionObserver in a few lines.</p>
-                </div>
-            </a>
-
-            <a class="card glass tilt reveal" href="article.html?slug=parallax">
-                <img src="img/thumb1.jpg" alt="" />
-                <div class="card__body">
-                    <h3>Parallax & mouse tilt</h3>
-                    <p>Make UI react to the cursor.</p>
-                </div>
-            </a>
+            <div class="art" aria-label="content"></div>
         </div>
     </main>
 
-    <footer class="footer glass">
-        <div class="container">
-            <p>© 2025 NEO • educational mini-blog</p>
+    <!-- Feature cards -->
+    <section class="container section" id="previews">
+        <div class="cards">
+            <article class="card">
+                <div class="ic">📈</div>
+                <h3>300% Growth</h3>
+                <p>Покажи рост метрик с помощью дешбордов.</p>
+            </article>
+            <article class="card">
+                <div class="ic">👥</div>
+                <h3>50K+ Users</h3>
+                <p>Коммьюнити и обратная связь.</p>
+            </article>
+            <article class="card">
+                <div class="ic">⚡</div>
+                <h3>Fast</h3>
+                <p>Минимум ожидания — максимум действия.</p>
+            </article>
+            <article class="card">
+                <div class="ic">🛡️</div>
+                <h3>Secure</h3>
+                <p>Данные под надёжной защитой.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Big features -->
+    <section class="container section" id="features">
+        <div class="label">What We Offer</div>
+        <h2>Cool Features <span class="accent">You'll Love</span></h2>
+
+        <div class="features-grid">
+            <article class="feature">
+                <div class="ic">🤖</div>
+                <h3>AI-Powered</h3>
+                <p class="muted">Алгоритмы, которые адаптируются под тебя.</p>
+            </article>
+            <article class="feature">
+                <div class="ic">🧱</div>
+                <h3>Modular</h3>
+                <p class="muted">Гибкие компоненты для любой сборки.</p>
+            </article>
+            <article class="feature">
+                <div class="ic">🔒</div>
+                <h3>Super Secure</h3>
+                <p class="muted">Топ-уровень безопасности.</p>
+            </article>
+            <article class="feature">
+                <div class="ic">🤖</div>
+                <h3>Automation</h3>
+                <p class="muted">Пусть рутина делаетcя сама.</p>
+            </article>
+            <article class="feature">
+                <div class="ic">🧩</div>
+                <h3>Easy Integration</h3>
+                <p class="muted">Работает с тем, чем ты уже пользуешься.</p>
+            </article>
+            <article class="feature">
+                <div class="ic">🚀</div>
+                <h3>Lightning Fast</h3>
+                <p class="muted">Серьёзно быстро. Без ожиданий.</p>
+            </article>
+        </div>
+
+        <div class="why">
+            <h3 style="margin:0 0 8px">Почему выбирают нас?</h3>
+            <ul>
+                <li>Реальные обновления в реальном времени</li>
+                <li>Аналитика и дешборды</li>
+                <li>Поддержка тогда, когда нужна</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container footer" id="about">
+        <div class="footgrid">
+            <div>
+                <div class="brand" style="display:inline-flex">
+                    <span class="logo">⚡</span><strong>TechFuture</strong>
+                </div>
+                <p class="muted" style="margin-top:10px">Making the future accessible today.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <p class="muted"><a href="#features">Features</a><br><a href="#">Pricing</a><br><a href="#about">About</a><br><a href="#">Contact</a></p>
+            </div>
+
+            <div>
+                <h4>Legal Stuff</h4>
+                <p class="muted"><a href="#">Privacy Policy</a><br><a href="#">Terms of Service</a><br><a href="#">Cookie Policy</a></p>
+            </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
