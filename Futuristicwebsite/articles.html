@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Articles • NEO</title>
+    <meta name="viewport" content="width=1280, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="nav glass">
+        <div class="container nav__row">
+            <a class="logo" href="index.html">NEO</a>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a class="is-active" href="articles.html">Articles</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title reveal">All notes</h1>
+
+        <div class="filters glass reveal">
+            <button class="chip is-active" data-filter="all">All</button>
+            <button class="chip" data-filter="css">CSS</button>
+            <button class="chip" data-filter="js">JS</button>
+            <button class="chip" data-filter="ui">UI</button>
+        </div>
+
+        <div class="cards" id="list">
+            <a class="card glass tilt reveal" data-tags="ui css" href="article.html?slug=glass">
+                <img src="img/thumb1.jpg" alt="" />
+                <div class="card__body">
+                    <h3>Glassmorphism without libraries</h3>
+                    <p>Rich yet readable glass UI.</p>
+                </div>
+            </a>
+
+            <a class="card glass tilt reveal" data-tags="js ui" href="article.html?slug=scroll">
+                <img src="img/thumb1.jpg" alt="" />
+                <div class="card__body">
+                    <h3>Reveal on scroll</h3>
+                    <p>Observer + utilities: clean and scalable.</p>
+                </div>
+            </a>
+
+            <a class="card glass tilt reveal" data-tags="js" href="article.html?slug=parallax">
+                <img src="img/thumb1.jpg" alt="" />
+                <div class="card__body">
+                    <h3>Parallax & tilt</h3>
+                    <p>Interactive feel with simple math.</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container"><p>© 2025 NEO</p></div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

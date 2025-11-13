@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>NEO • interactive blog</title>
+    <meta name="viewport" content="width=1280, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="nav glass">
+        <div class="container nav__row">
+            <a class="logo" href="index.html">NEO</a>
+            <nav class="menu">
+                <a href="index.html" class="is-active">Home</a>
+                <a href="articles.html">Articles</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero reveal">
+        <img class="hero__bg" src="img/hero.jpg" alt="" />
+        <div class="container hero__content glass">
+            <h1>Interactive blog about web & ideas</h1>
+            <p>Experiments with HTML/CSS/JS: effects, animation, and tiny notes.</p>
+            <div class="hero__cta">
+                <a class="btn" href="articles.html">Read articles</a>
+                <a class="btn btn--ghost" href="about.html">About the project</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title reveal">Featured notes</h2>
+
+        <div class="cards">
+            <a class="card glass tilt reveal" href="article.html?slug=glass">
+                <img src="img/thumb1.jpg" alt="" />
+                <div class="card__body">
+                    <h3>Glassmorphism without libraries</h3>
+                    <p>Blur, layers, accents, and readability.</p>
+                </div>
+            </a>
+
+            <a class="card glass tilt reveal" href="article.html?slug=scroll">
+                <img src="img/thumb1.jpg" alt="" />
+                <div class="card__body">
+                    <h3>Smooth reveal-on-scroll</h3>
+                    <p>IntersectionObserver in a few lines.</p>
+                </div>
+            </a>
+
+            <a class="card glass tilt reveal" href="article.html?slug=parallax">
+                <img src="img/thumb1.jpg" alt="" />
+                <div class="card__body">
+                    <h3>Parallax & mouse tilt</h3>
+                    <p>Make UI react to the cursor.</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <p>© 2025 NEO • educational mini-blog</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
